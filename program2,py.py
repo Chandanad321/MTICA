@@ -9,24 +9,11 @@ print('-'*40)
 printSeriesDecreasing(inpCh,inpNum) """   
 
 
-"""def printSeriesDecreasing(ch,n):
-    assert isinstance(ch,str),'first argument shouldnbe string'
-    assert isinstance(n,int),'second argument shouldnbe integer'
+def printSeriesDecreasing(ch,n):
     for i in range(n,0,-1):
         print(ch*i)
-    return None"""
-
-def printSeries(n):
-
-    for i in range(1,n+1):
-        print()
-        for j in range(i):
-            print(i,end=' ')
-
     return None
-inpNum=int(input())
-printSeries(inpNum)
-            
+
 
 
 

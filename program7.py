@@ -15,17 +15,24 @@ printSeriesDecreasing(inpCh,inpNum) """
     for i in range(n,0,-1):
         print(ch*i)
     return None"""
-
+"""
 def printSeries(n):
-
     for i in range(1,n+1):
+        num=1
         print()
         for j in range(i):
-            print(i,end=' ')
-
+            print(num,end=' ')
+            num+=1
     return None
 inpNum=int(input())
-printSeries(inpNum)
+printSeries(inpNum)"""
+def printMonth(dn):
+    pass
+    
+
+for i in range(3):
+    inpNum=int(input())
+    print(printMonth(inpNum))
             
 
 
