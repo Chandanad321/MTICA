@@ -1,44 +1,25 @@
-"""def printSeriesIncreasing(ch,n):
-    for i in range(1,n+1,1):
-        print(ch*i)
-    return None
-inpCh=input("enter a character:")
-inpNum=input("enter a no:")
-printSeriesIncreasing(inpCh,inpNum)
-print('-'*40)
-printSeriesDecreasing(inpCh,inpNum) """   
+import sqlite3 as lite
+con = lite.connect('mtica.db')
 
+cur=con.cursor()
+cur.execute("DROP TABLE IF EXISTS Cars")
+cur.execute('''CREATE TABLE  Cars(
+        Id INT, Name TEXT,Price INT)''')
+print("table cars cereated.")
+cur.execute("INSERT INTO Cars VALUES(1,'Rani',52642)")
+cur.execute("INSERT INTO Cars VALUES(2,'Soni',57127)")
 
-"""def printSeriesDecreasing(ch,n):
-    assert isinstance(ch,str),'first argument shouldnbe string'
-    assert isinstance(n,int),'second argument shouldnbe integer'
-    for i in range(n,0,-1):
-        print(ch*i)
-    return None"""
-"""
-def printSeries(n):
-    for i in range(1,n+1):
-        num=1
-        print()
-        for j in range(i):
-            print(num,end=' ')
-            num+=1
-    return None
-inpNum=int(input())
-printSeries(inpNum)"""
-def printSeries(ch,n):
-    sp='.'
-    for i in range(0,n):
-        print(sp*(n-i-1) +ch*(2*i+1)+sp*(n-i-1))
-    return None
-inpCh=input()
-inpNum=int(input())
-printSeries(inpCh,inpNum)
-            
+cur.execute("INSERT INTO Cars VALUES(3,'Tani',9000)")
+cur.execute("INSERT INTO Cars VALUES(4,'Vani',29000)")
+cur.execute("INSERT INTO Cars VALUES(5,'Pani',35000)")
+cur.execute("INSERT INTO Cars VALUES(6,'Nani',40000)")
+cur.execute("INSERT INTO Cars VALUES(7,'Yani',52000)")
+cur.execute("INSERT INTO Cars VALUES(8,'Kani',63000)")
 
+con.commit()
+print("Values in tables car inserted.")
 
 
-    
 
 
 
@@ -46,147 +27,3 @@ printSeries(inpCh,inpNum)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    

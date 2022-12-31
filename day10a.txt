@@ -1,0 +1,5 @@
+basics of python
+operators
+functions
+List
+control statements

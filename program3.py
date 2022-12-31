@@ -1,46 +1,10 @@
-"""def KelvinToFahrenheit(Temperature):
-   assert (Temperature >= 0),"Colder than absolute zero at MTICA!"
-   reS=((Temperature-273)*1.8)+32
-   return res
-try:
-    print(KelvinToFahrenheit(-50))
-except Exception as ob:
-    print(ob)
-try:
-    print(KelvinToFahrenheit(273))
-except Exception as ob:
-    print(ob)
-try:
-    print(KelvinToFahrenheit(505.78))
-except Exception as ob:
-    print(ob)
-try:
-    print(KelvinToFahrenheit(-5))
-except Exception as ob:
-    print(ob)
-print("thank you")"""
-def Factorial(num):
-    assert(num>=0),"Factorial of negative number is not defined!"
-    if num==0:
-        return 1
-    else:
-        return num*Factorial(num-1)
-try:
-    print(Factorial(-45))
-except Exception as obj:
-    print(obj)
-
-try:
-    print(Factorial(4,9))
-except Exception as obj:
-    print(obj)
-try:
-    print(Factorial(45))
-except Exception as obj:
-    print(obj)
-try:
-    print(Factorial('today'))
-except Exception as obj:
-    print(obj)
-              
-        
+def add(*n):
+    temp=0
+    for i in n:
+        temp+=i
+    return temp
+print("add():",add())
+print("add(5):",add(5))
+print("add(5,7):",add(5,7))
+print("add(5,7,2):",add(5,7,2))
+print("add(5,7,2,11,55,77,22):",add(5,7,2,11,55,77,22))
