@@ -4,5 +4,11 @@ sample_dict={
      "salary":90000,
      "city":"Krishna rajpuram"
 }
-sample_dict['location']=sample_dict.pop('city')
+keys=["name","salary"]
+#newDict={}
+res=dict()
+for k in keys:
+    sample_dict.pop(k)
 print(sample_dict)
+
+    
