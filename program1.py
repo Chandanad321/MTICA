@@ -1,13 +1,30 @@
-'''
-this module covers 10th day trining of MCA
-'''
-def funAdd(x,y):
-    '''
-this function takes two integer arguments and returns sum of it
-Chandana this triple quote is for comment which is wrong
-'''
-    temp=x+y
-    return temp
-inpNum1=int(input())
-inpNum2=int(input())
-print(funAdd(inpNum1,inpNum2))
+def printMonth(dn):
+    if (dn==1):
+       return "January"
+    elif (dn==2):
+       return "February"
+    elif (dn==3):
+       return "March"
+    elif (dn==4):
+       return "April"
+    elif (dn==5):
+       return "May"
+    elif (dn==6):
+       return "June"
+    elif (dn==7):
+       return "July"
+    elif (dn==8):
+       return "August"
+    elif (dn==9):
+       return "September"
+    elif (dn==10):
+       return "October"
+    elif (dn==11):
+       return "November"
+    elif (dn==12):
+       return "December"
+    else:
+        return"Invalid"
+for i in range(3):
+    inpNum=int(input())
+    print(printMonth(inpNum))
