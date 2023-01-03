@@ -1,20 +1,13 @@
-"""def add(*n):
-    temp=0
-    for i in n:
-        temp+=i
-    return temp
-print("add():",add())
-print("add(5):",add(5))
-print("add(5,7):",add(5,7))
-print("add(5,7,2):",add(5,7,2))
-print("add(5,7,2,11,55,77,22):",add(5,7,2,11,55,77,22))"""
-
-fo=open(r"D:\31-12-22\day10.txt","a")
-for i in range(5):
-    inpstr=input("Enter astring:")
-    fo.write(inpstr+'\n')
-fo.close()
-print("Written to file")
+##sample_set={"red","blue","green"}
+##sample_list=["white","block","orange"]
+##sample_set.update(sample_list)
+##print(sample_set)
+##
+####unhansable type cannot be set member
+####for i in sample_list:
+###     sample_set.add(i)
 
 
-
+set1={10,20,30,40,50}
+set2={30,40,50,60,70}
+print(set1.intersection(set2))

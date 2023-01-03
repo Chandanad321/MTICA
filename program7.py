@@ -1,12 +1,14 @@
-import sqlite3 as lite
-con = lite.connect('mtica.db')
+##sample_set={"red","blue","green"}
+##sample_list=["white","block","orange"]
+##sample_set.update(sample_list)
+##print(sample_set)
+##
+####unhansable type cannot be set member
+####for i in sample_list:
+###     sample_set.add(i)
 
-cur=con.cursor()
-cur.execute("SELECT * FROM Cars")
-rows=cur.fetchall()
-for row in rows:
-    print(row)
 
-##for row in rows:
-#    print("{0:<3}|{1:<15}|{2:>5}".format (row[0],row[1],row[2]))
- 
+set1={10,20,30,40,50}
+set2={30,40,50,60,70}
+print(set1.symmetric_difference(set2))
+

@@ -1,30 +1,8 @@
-def printMonth(dn):
-    if (dn==1):
-       return "January"
-    elif (dn==2):
-       return "February"
-    elif (dn==3):
-       return "March"
-    elif (dn==4):
-       return "April"
-    elif (dn==5):
-       return "May"
-    elif (dn==6):
-       return "June"
-    elif (dn==7):
-       return "July"
-    elif (dn==8):
-       return "August"
-    elif (dn==9):
-       return "September"
-    elif (dn==10):
-       return "October"
-    elif (dn==11):
-       return "November"
-    elif (dn==12):
-       return "December"
-    else:
-        return"Invalid"
-for i in range(3):
-    inpNum=int(input())
-    print(printMonth(inpNum))
+def printSeries(ch,n):
+    sp='.'
+    for i in range(0,n):
+        print(sp*(n-i-1) +ch*(2*i+1)+sp*(n-i-1))
+    return None
+inpCh=input()
+inpNum=int(input())
+printSeries(inpCh,inpNum)
