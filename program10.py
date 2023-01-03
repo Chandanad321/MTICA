@@ -1,12 +1,22 @@
-x1=5
-y1=5
-x2='hello'
-y2='hello'
-x3=[1,2,3]
-y3=[1,2,3]
+class Dog:
+    price=500
+    def __init__(self,name,color):
+        self.color=color
+        self.name=name
+    def bark(self):
+        print("Woof")
+        print(self.name,"has",self.price,
+              "price and its color is",self.color)
+    
+if __name__=="__main__":
+    pet1=Dog("Tommy","brown")
+    pet2=Dog("Sheru","white")
+    pet1.bark()
+    pet2.bark()
+    print(pet1.price)
+    print(pet2.price)
+    print(Dog.price)
+Dog('abc','blue').bark()
+    
 
-print(x1 is not y1)
 
-print(x2 is y2)
-
-print(x3 is y3)
